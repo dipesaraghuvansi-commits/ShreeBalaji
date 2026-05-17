@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Balaji Suppliers | Gitti, Bajri, Sand Delivery</title>
+    
+    <!-- Tailwind CSS for Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; }
+        .construction-yellow { background-color: #F5B301; }
+        .text-construction { color: #F5B301; }
+        .bg-dark-gray { background-color: #2B2B2B; }
+        .card-shadow { box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .nav-active { border-bottom: 3px solid #F5B301; color: #F5B301; }
+    </style>
+</head>
+<body class="bg-gray-50 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-gray text-white border-b-2 border-yellow-500">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold uppercase">
+                Shree <span class="text-construction">Balaji</span>
+            </div>
+            <div class="hidden md:flex space-x-6 font-semibold uppercase text-sm">
+                <a href="#home" class="hover:text-construction">Home</a>
+                <a href="#rates" class="hover:text-construction">Rates</a>
+                <a href="#products" class="hover:text-construction">Products</a>
+                <a href="#booking" class="bg-yellow-500 text-black px-4 py-1">Book Now</a>
+            </div>
+            <div class="md:hidden">
+                <a href="tel:+919999999999" class="text-construction text-xl"><i class="fa fa-phone"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-[90vh] flex items-center pt-16 bg-black overflow-hidden">
+        <div class="absolute inset-0 opacity-50 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&q=80" alt="Construction" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 px-6 max-w-4xl mx-auto text-center md:text-left" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold text-white uppercase leading-tight">
+                Stone, Gitti & <br><span class="text-construction">Bajri Delivery</span>
+            </h1>
+            <p class="mt-4 text-gray-200 text-lg">Bijainagar में कंस्ट्रक्शन मटेरियल की सबसे तेज़ सप्लाई। मार्केट से कम रेट और बेहतरीन क्वालिटी।</p>
+            <div class="mt-8 flex flex-col md:flex-row gap-4">
+                <a href="#booking" class="bg-yellow-500 text-black font-black px-10 py-4 text-center uppercase text-lg hover:bg-white transition">Book Now</a>
+                <a href="https://wa.me/919999999999" class="border-2 border-white text-white font-black px-10 py-4 text-center uppercase text-lg hover:bg-yellow-500 hover:border-yellow-500 transition">WhatsApp Order</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today Rates Section -->
+    <section id="rates" class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto" data-aos="fade-right">
+            <h2 class="text-3xl font-black uppercase italic border-l-8 border-yellow-500 pl-4 mb-8">आज का रेट (Today's Rate)</h2>
+            <div class="overflow-hidden rounded-lg shadow-2xl border border-gray-200">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-dark-gray text-white uppercase text-sm">
+                        <tr>
+                            <th class="p-4">Material</th>
+                            <th class="p-4">Per Ton</th>
+                            <th class="p-4">Per Trolley</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-800 font-semibold">
+                        <tr class="border-b">
+                            <td class="p-4">Banas Bajri (Sand)</td>
+                            <td class="p-4 text-red-600">₹1,150</td>
+                            <td class="p-4">₹5,800</td>
+                        </tr>
+                        <tr class="border-b bg-yellow-50">
+                            <td class="p-4">20mm Gitti (Stone)</td>
+                            <td class="p-4 text-red-600">₹620</td>
+                            <td class="p-4">₹3,200</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-4">Crusher Dust</td>
+                            <td class="p-4 text-red-600">₹450</td>
+                            <td class="p-4">₹2,400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-4 text-sm text-gray-500 font-bold">* बाजार के अनुसार रेट बदल सकते हैं। अंतिम रेट कन्फर्म करने के लिए कॉल करें।</p>
+        </div>
+    </section>
+
+    <!-- Product Cards -->
+    <section id="products" class="py-16 px-4 bg-gray-100">
+        <h2 class="text-3xl font-black text-center uppercase mb-12">Our Materials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded shadow-lg border-b-4 border-yellow-500 hover:scale-105 transition duration-300" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1516216628859-9bccecad13ca?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-cover rounded mb-4" alt="Bajri">
+                <h3 class="text-xl font-bold uppercase">Banas Bajri</h3>
+                <p class="text-gray-600 text-sm mb-4 italic">High-quality river sand for slab and plaster work.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-black text-xl">₹5,800 <small class="text-xs text-gray-500">/ Trolley</small></span>
+                    <a href="#booking" class="bg-black text-white px-4 py-2 text-xs font-bold uppercase">Book</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded shadow-lg border-b-4 border-yellow-500 hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-cover rounded mb-4" alt="Gitti">
+                <h3 class="text-xl font-bold uppercase">20mm Gitti</h3>
+                <p class="text-gray-600 text-sm mb-4 italic">Best for RCC Lintel, Slab, and Road Construction.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-black text-xl">₹3,200 <small class="text-xs text-gray-500">/ Trolley</small></span>
+                    <a href="#booking" class="bg-black text-white px-4 py-2 text-xs font-bold uppercase">Book</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded shadow-lg border-b-4 border-yellow-500 hover:scale-105 transition duration-300" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1590001158153-5483f819f3f5?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-cover rounded mb-4" alt="Dust">
+                <h3 class="text-xl font-bold uppercase">Crusher Dust</h3>
+                <p class="text-gray-600 text-sm mb-4 italic">Ideal for brickwork and flooring base.</p>
+                <div class="flex justify-between items-center">
+                    <span class="font-black text-xl">₹2,400 <small class="text-xs text-gray-500">/ Trolley</small></span>
+                    <a href="#booking" class="bg-black text-white px-4 py-2 text-xs font-bold uppercase">Book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="py-20 px-4 bg-dark-gray text-white">
+        <div class="max-w-xl mx-auto bg-white text-black rounded-lg overflow-hidden shadow-2xl" data-aos="fade-up">
+            <div class="bg-yellow-500 p-6">
+                <h2 class="text-2xl font-black uppercase italic">Order Booking Form</h2>
+                <p class="text-sm font-bold">अपना ऑर्डर बुक करें, हम आपसे तुरंत संपर्क करेंगे।</p>
+            </div>
+            <form action="#" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-sm font-bold uppercase">Customer Name</label>
+                    <input type="text" class="w-full p-3 border-2 border-gray-200 rounded outline-none focus:border-yellow-500" placeholder="Apna Naam Likhe" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold uppercase">Mobile Number</label>
+                    <input type="tel" class="w-full p-3 border-2 border-gray-200 rounded outline-none focus:border-yellow-500" placeholder="Mobile No." required>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-bold uppercase">Material</label>
+                        <select class="w-full p-3 border-2 border-gray-200 rounded outline-none">
+                            <option>Bajri</option>
+                            <option>10mm Gitti</option>
+                            <option>20mm Gitti</option>
+                            <option>Crusher Dust</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold uppercase">Vehicle</label>
+                        <select class="w-full p-3 border-2 border-gray-200 rounded outline-none">
+                            <option>Tractor (Trolley)</option>
+                            <option>Dumper</option>
+                            <option>Truck (10 Wheeler)</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold uppercase">Delivery Address</label>
+                    <textarea class="w-full p-3 border-2 border-gray-200 rounded h-24 outline-none focus:border-yellow-500" placeholder="Pura Pata Likhe (Bijainagar Area)"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-black font-black py-4 uppercase text-xl shadow-lg hover:bg-black hover:text-white transition">Confirm Booking</button>
+                <a href="https://wa.me/919999999999" class="block text-center w-full bg-green-600 text-white font-black py-3 uppercase text-sm rounded mt-2">Book on WhatsApp</a>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-6 border-t-4 border-yellow-500">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-2xl font-bold uppercase mb-4 text-construction">Shree Balaji Suppliers</h3>
+                <p class="text-gray-400">Bijainagar, Rajasthan - 305624<br>Quality & Trust is our motto.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold uppercase mb-4 underline decoration-yellow-500">Contact Us</h4>
+                <p class="text-xl font-bold"><i class="fa fa-phone text-construction"></i> +91 99999 99999</p>
+                <p class="text-xl font-bold mt-2"><i class="fa-brands fa-whatsapp text-construction"></i> +91 99999 99999</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold uppercase mb-4 underline decoration-yellow-500">Service Area</h4>
+                <p class="text-gray-400">Bijainagar, Gulabpura, Hurda, Bandanwara, and all nearby villages.</p>
+            </div>
+        </div>
+        <div class="text-center mt-12 text-gray-600 text-sm uppercase font-bold">
+            &copy; 2024 Shree Balaji Suppliers. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col space-y-4 z-[99]">
+        <a href="https://wa.me/919999999999" class="bg-green-500 text-white p-4 rounded-full shadow-2xl animate-bounce">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+        <a href="tel:+919999999999" class="bg-yellow-500 text-black p-4 rounded-full shadow-2xl">
+            <i class="fa fa-phone text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Simple form handling alert
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Aapka Order mil gaya hai! Hum aapse turant sampark karenge.');
+        });
+    </script>
+</body>
+</html>
